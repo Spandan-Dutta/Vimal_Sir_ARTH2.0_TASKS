@@ -1,4 +1,6 @@
 import smtplib
+
+# class creation
 class visitorForm:
     mycount = 0
     def __init__(self,myname,myphone,myemail,mypassword,sender_id):
@@ -15,3 +17,10 @@ class visitorForm:
         visitorForm.mycount += 1
     def getphone(self):
         print(self.phone)
+   
+
+# Object creation
+spandan = visitorForm(myname = "Jack k" , myphone = 11111,myemail = "spandan.dutta_cs.ccv19@gla.ac.in",mypassword=9412454043,sender_id="navyaswarup2004@gmail.com")
+
+# To count how many number of students have joined.
+print("The number of students are: ",visitorForm.mycount)
